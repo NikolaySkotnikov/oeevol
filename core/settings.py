@@ -11,15 +11,11 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['oeevol.ru', 'www.oeevol.ru', '109.196.100.114', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'nikolayskotnikov-oeevol-5b24.twc1.net']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://oeevol.ru',
-    'https://www.oeevol.ru',
-    'http://oeevol.ru',
-    'http://www.oeevol.ru',
-    'https://109.196.100.114',
-    'http://109.196.100.114'
+    'http://nikolayskotnikov-oeevol-5b24.twc1.net',
+    'https://nikolayskotnikov-oeevol-5b24.twc1.net'
 ]
 
 INSTALLED_APPS = [
