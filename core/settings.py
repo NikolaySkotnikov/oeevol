@@ -8,7 +8,16 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'your-domain.com']
+ALLOWED_HOSTS = ['oeevol.ru', 'www.oeevol.ru', '109.196.100.114', 'localhost', '127.0.0.1']
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://oeevol.ru',
+    'https://www.oeevol.ru',
+    'http://oeevol.ru',
+    'http://www.oeevol.ru',
+    'https://109.196.100.114',
+    'http://109.196.100.114'
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
